@@ -3,47 +3,15 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<style>
 @font-face {
-    font-family: t1;
-    src:url("SF-Pro-Display-Ultralight.otf");
-}
-@font-face {
-    font-family: t2;
-    src:url("SF-Pro-Display-Thin.otf");
-}
-@font-face {
-    font-family: t3;
-    src:url("SF-Pro-Display-Light.otf");
-}
-@font-face {
     font-family: t4;
-    src:url("SF-Pro-Rounded-Regular.otf");
-}
-@font-face {
-    font-family: t5;
-    src:url("SF-Pro-Display-Medium.otf");
-}
-@font-face {
-    font-family: t6;
-    src:url("SF-Pro-Display-Bold.otf");
-}
-@font-face {
-    font-family: t7;
-    src:url("SF-Pro-Display-Semibold.otf");
-}
-@font-face {
-    font-family: t8;
-    src:url("SF-Pro-Display-Heavy.otf");
-}
-@font-face {
-    font-family: t9;
-    src:url("SF-Pro-Display-Black.otf");
+    src:url("SFSymbolsFallback.ttf");
 }
 body { font-size: 10px; margin: 0 auto; text-align: center; }
 td { font-size: 8px; text-align: center; padding: 0; margin: 0; overflow: hidden }
 tr { padding: 0; margin: 0;  }
 .name { font-size: 6px; font-family: t4; white-space: nowrap; overflow: hidden; }
 .codepoint { font-size: 6px; font-family: t4; color: #666;}
-table { float: left; width: 95; margin: 3px 3px; }
+table { float: left; width: 95; margin: 3px 3px; min-height: 73px; }
 .icon {font-family: t4; font-size: 40px; line-height: 50px;}
 </style>
 </head>
@@ -584,6 +552,8 @@ table { float: left; width: 95; margin: 3px 3px; }
 'arrow.up.bin.fill',
 'doc',
 'doc.fill',
+'doc.circle',
+'doc.circle.fill',
 'arrow.up.doc',
 'arrow.up.doc.fill',
 'arrow.down.doc',
@@ -613,6 +583,8 @@ table { float: left; width: 95; margin: 3px 3px; }
 'arrowshape.turn.up.left.2.fill',
 'book',
 'book.fill',
+'book.circle',
+'book.circle.fill',
 'bookmark',
 'bookmark.fill',
 'paperclip',
@@ -719,6 +691,8 @@ table { float: left; width: 95; margin: 3px 3px; }
 'star.slash.fill',
 'flag',
 'flag.fill',
+'flag.circle',
+'flag.circle.fill',
 'flag.slash',
 'flag.slash.fill',
 'location',
@@ -731,12 +705,18 @@ table { float: left; width: 95; margin: 3px 3px; }
 'location.north.line.fill',
 'bell',
 'bell.fill',
+'bell.circle',
+'bell.circle.fill',
 'bell.slash',
 'bell.slash.fill',
 'tag',
 'tag.fill',
+'tag.circle',
+'tag.circle.fill',
 'bolt',
 'bolt.fill',
+'bolt.circle',
+'bolt.circle.fill',
 'bolt.slash',
 'bolt.slash.fill',
 'eye',
@@ -786,10 +766,18 @@ table { float: left; width: 95; margin: 3px 3px; }
 'dot.radiowaves.left.and.right',
 'ant',
 'ant.fill',
+'ant.circle',
+'ant.circle.fill',
 'camera',
 'camera.fill',
+'camera.circle',
+'camera.circle.fill',
 'camera.rotate',
 'camera.rotate.fill',
+'message',
+'message.fill',
+'message.circle',
+'message.circle.fill',
 'bubble.right',
 'bubble.right.fill',
 'bubble.left',
@@ -976,6 +964,8 @@ table { float: left; width: 95; margin: 3px 3px; }
 'rectangle.stack.badge.plus.fill',
 'rectangle.stack.badge.minus',
 'rectangle.stack.badge.minus.fill',
+'rectangle.stack.badge.person.crop',
+'rectangle.stack.badge.person.crop.fill',
 'rectangle.stack.person.crop',
 'rectangle.stack.person.crop.fill',
 'square.on.square',
@@ -1039,6 +1029,7 @@ table { float: left; width: 95; margin: 3px 3px; }
 'app.gift',
 'app.gift.fill',
 'airplane',
+'studentdesk',
 'memories',
 'memories.badge.plus',
 'memories.badge.minus',
@@ -1079,8 +1070,12 @@ table { float: left; width: 95; margin: 3px 3px; }
 'xmark.octagon',
 'xmark.octagon.fill',
 'pencil.tip',
+'calendar.circle',
+'calendar.circle.fill',
 'magnifyingglass.circle',
 'magnifyingglass.circle.fill',
+'paperclip.circle',
+'paperclip.circle.fill',
 'rectangle.and.paperclip',
 'bolt.horizontal',
 'bolt.horizontal.fill',
@@ -1100,6 +1095,8 @@ table { float: left; width: 95; margin: 3px 3px; }
 'perspective',
 'lock.circle',
 'lock.circle.fill',
+'pin.circle',
+'pin.circle.fill',
 'tv.fill',
 'tv.music.note.fill',
 'music.house',
@@ -1440,6 +1437,8 @@ table { float: left; width: 95; margin: 3px 3px; }
 'exclamationmark.octagon.fill',
 'barcode',
 'bubble.left.and.bubble.right.fill',
+'bolt.badge.a',
+'bolt.badge.a.fill',
 'arkit',
 'volume.slash.rtl',
 'volume.slash.fill.rtl',
@@ -1463,12 +1462,14 @@ table { float: left; width: 95; margin: 3px 3px; }
 'umbrella',
 'umbrella.fill',
 'desktopcomputer',
+'car',
 'car.fill',
 'chevron.left.slash.chevron.right',
 'arrow.3.trianglepath',
 'leaf.arrow.circlepath',
 'arrow.up.right.diamond',
 'arrow.up.right.diamond.fill',
+'arrow.branch',
 'circle.grid.hex',
 'circle.grid.hex.fill',
 'signature',
@@ -1597,12 +1598,17 @@ table { float: left; width: 95; margin: 3px 3px; }
 'battery.100',
 'battery.25',
 'battery.0',
+'lightbulb',
+'lightbulb.fill',
 'rosette',
 'stop',
 'stop.fill',
 'gamecontroller',
 'gamecontroller.fill',
 'plusminus',
+'mappin.circle',
+'mappin.circle.fill',
+
 'chart.pie.fill',
 'wand.and.stars',
 'wand.and.stars.inverse',
@@ -1616,6 +1622,8 @@ table { float: left; width: 95; margin: 3px 3px; }
 'ear',
 'trash.slash',
 'trash.slash.fill',
+'stop.circle',
+'stop.circle.fill',
 'video.badge.plus',
 'video.badge.plus.fill',
 'goforward.10.ar',
@@ -1632,39 +1640,106 @@ table { float: left; width: 95; margin: 3px 3px; }
 'gobackward.75.ar',
 'goforward.90.ar',
 'gobackward.90.ar',
+'zzz.speaker.ar',
+'zzz.speaker.fill.ar',
 'camera.on.rectangle',
-'camera.on.rectangle.fill'
+'camera.on.rectangle.fill',
+'tram',
+'person.3',
+'person.3.fill',
+'flashlight.off.fill',
+'hifispeaker',
+'hifispeaker.fill',
+'sportscourt',
+'sportscourt.fill',
+'largecircle.fill.circle',
+'hexagon',
+'hexagon.fill',
+'f.cursive.circle',
+'f.cursive.circle.fill',
+'capsule',
+'capsule.fill',
+'decrease.quotelevel',
+'increase.quotelevel',
+'lightbulb.slash',
+'lightbulb.slash.fill',
+'waveform.circle',
+'waveform.circle.fill',
+'flashlight.on.fill',
+'aspectratio',
+'flip.horizontal',
+'flip.horizontal.fill',
+'aspectraio.fill',
+'shield.lock',
+'shield.lock.fill',
+'checkmark.shield',
+'checkmark.shield.fill',
+'xmark.shield',
+'xmark.shield.fill',
+'exclaimationmark.shield',
+'exclaimationmark.shield.fill',
+'shield.slash',
+'shield.slash.fill',
+'goforward.10.hi',
+'gobackward.10.hi',
+'goforward.15.hi',
+'gobackward.15.hi',
+'goforward.30.hi',
+'gobackward.30.hi',
+'goforward.45.hi',    
+'gobackward.45.hi',
+'goforward.60.hi',
+'gobackward.60.hi',
+'goforward.75.hi',
+'gobackward.75.hi',
+'goforward.90.hi',
+'gobackward.90.hi',
+'scissors.badge.ellipsis',
+'arrow.uturn.left.circle.badge.ellipsis',
+'circle.grid.2x2',
+'circle.grid.2x2.fill'
 );
+
+//'pin.circle',
+//'pin.circle.fill',
+//'bolt.badge.a',
+//'bolt.badge.a.fill',
+
+
 	$counter = 0;
     // Loop through the unicode range
-	for($i=1048576;$i<=1050434;$i++){
+	for($i=1048576;$i<=1050559;$i++){
 	$h = (string)dechex($i);
 	
     // gaps in the unicode list, found via trial and error.
     // Revisit this in the future if new symbols are added
-	$bad_keys = array('100064','100065','1000f4','1000f5','10015a','10015b','10015c','10015d','10015e','10015f','100160','100161','100162','100163','100164','100165','100166','100167','100168','100169','100172','100186','10019f','1001a0','1001a3','1001a4','1001a9','1001af','1001b0','100221','100222','10022f','100230','100233','100234','100239','10023a','100256','100257','100258','100259','10025c','10025d','100260','100261','100268','1002cb','1002cc','1002cf','1002d0','1002db','1002dc','1002df','1002e0','1002e3','1002e4','1002e7','1002e8','1002eb','1002ec','10031c','10031d','100320','100321','100324','100325','100326','100327','10033a','10033b','10035d','10035e','100378','100379','10038b','10038d','10038e','10038f','1003c1','1003c2','1003d1','1003d2','1003d3','1003d4','1003ef','1003f0','1003f5','1003f6','1003f7','1003f8','1003f9','1003fa','1003fd','1003fe','1003ff','100400','100401','100402','100403','100404','10040d','10040e','100424','100425','100426','100427','100428','100432','100433','100434','100435','100436','100439','10043a','10043b','10043c','10043d','100441','100454','100455','10045b','10045c','10045d','10045f','100463','100464','100465','100466','100467','100468','100469','10046e','100487','100488','10048c','10048d','10048e','10048f','100490','100491','100494','100495','10049b','10049c','10049d','1004a2','1004a3','1004ab','1004ac','1004ad','1004ae','1004af','1004b0','1004b4','1004b5','1004b8','1004b9','1004ba','1004bb','1004be','1004bf','1004c0','1004c1','1004c6','1004c7','1004c8','1004c9','1004ca','1004cb','1004cc','1004cd','1004d2','1004d4','1004d5','1004d9','1004dd','1004de','1004df','1004e0','100572','100573','100576','100577','10057d','10057e','10057f','100581','10058c','10058d','100590','100591','100595','100596','10061b','10062a','10062b','100633','100634','100635','100636','100637','10063b','10063c','100646','10064d','10064e','10064f','100650','100651','100654','100658','10065d','100660','100661','10067b','10067c','10068a','10068b','10068c','10068d','10068e','10068f','1006e5','1003d9','1006eb','1006ec','1006ed','1006ee','1006f0','1006f1','1006f2','1006f3','1006f4','1006f5','1006fb','1006fc','1006fd','1006fe','1006ff','100700','100701','100702','100703','100704','100705','100706','100707','100708','100709','10070a','10070c','10070f','100710','100711','100712','100714','100719','10071b','10071c','10071d','10071e','100720','100721','100722','100724','100725','100726','100729','10072a','10072b','10072c','10072d','100730','10073f','100740');
+	$bad_keys = array('100064','100065','1000f4','1000f5','10015a','10015b','10015c','10015d','10015e','10015f','100160','100161','100162','100163','100164','100165','100166','100167','100168','100169','100172','100186','10019f','1001a0','1001a3','1001a4','1001a9','1001af','1001b0','100221','100222','10022f','100230','100233','100234','100256','100257','100258','100259','100260','100261','100268','1002cf','1002d0','1002df','1002e0','1002eb','1002ec','10033a','10033b','10035d','10035e','100378','100379','10038b','10038d','10038e','10038f','1003c1','1003c2','1003d1','1003d2','1003d3','1003d4','1003ef','1003f0','1003f5','1003f6','1003f7','1003f8','1003fd','1003fe','1003ff','100400','100401','100402','100403','100404','10040d','10040e','100424','100425','100426','100427','100428','100432','100433','100434','100435','100436','100439','10043a','10043b','10043c','10043d','100441','100455','10045b','10045c','10045d','10045f','100463','100464','100465','100466','100467','100468','100469','10046e','100487','100488','10048c','10048d','100490','100491','10049b','10049c','10049d','1004a2','1004a3','1004ab','1004ac','1004ad','1004ae','1004af','1004b0','1004b8','1004b9','1004ba','1004bb','1004be','1004bf','1004c0','1004c1','1004c6','1004c7','1004c8','1004c9','1004ca','1004cb','1004cc','1004cd','1004d2','1004d4','1004d5','1004d9','1004dd','1004de','1004df','1004e0','100572','100573','100576','100577','10057d','10057e','10057f','100581','10058c','10058d','100590','100591','100595','100596','10061b','10062a','10062b','100635','100636','100637','10063b','10063c','100646','10064d','10064e','10064f','100650','100651','100654','10065d','100661','10067b','10067c','10068a','10068b','10068c','10068d','10068e','10068f','1006e5','1003d9','1006eb','1006ec','1006f0','1006f1','1006f2','1006f3','1006f4','1006f5','1006fb','1006fc','1006fd','1006fe','1006ff','100700','100701','100702','100703','100704','100705','100706','100709','10070a','10070c','10070f','100710','100711','100712','100714','100719','10071b','10071c','10071d','10071e','100720','100721','100722','100724','100725','100726','100729','10072c','10072d','100730','100743','100744','100745','100746','100748','100749','10074d','100752','100753','100754','100755','100756','100757','100758','100759','10075a','10075b','10075f','100760','100761','100762','100763','100764','100765','100766','100769','10076a','10076b','10076c','10076d','10076e','10076f','100770','100771','100772','100773','100774','100775','100778','100779','10077a','10077b','10077c','10077d','10077e','100781','100782','100785','100786','100787','10078a','10078c','10078d','10078e','100790','100791','100794','100795','100797','100798','1007a3','1007b2','1007b3','1007b4','1007b5','1007b6','1007b9','1007ba','1007bb','1007bc','1007bd');
 
 
-
+    
 	if (in_array($h, $bad_keys, true)){
-		continue;
+        $name = '????';
+
+
+	} else {
+        $name = $names[$counter];
+        $counter++;
+    	// Output an individual table representing metadata for each symbol
+    	// Think Periodic table	
+		echo '<table>
+			<tr>
+				<td class="icon">&#x'.$h.';</td>
+			</tr>
+			<tr>
+				<td class="name">'.$name.'</td>
+			</tr>
+			<tr>
+				<td class="codepoint">('.$h.') '.$i.'</td>
+			</tr>
+		</table>';
 	}
 
-    // Output an individual table representing metadata for each symbol
-    // Think Periodic table	
-	echo '<table>
-		<tr>
-			<td class="icon">&#x'.$h.';</td>
-		</tr>
-		<tr>
-			<td class="name">'.$names[$counter].'</td>
-		</tr>
-		<tr>
-			<td class="codepoint">('.$h.') '.$i.'</td>
-		</tr>
-	</table>';
 	
-	$counter++;
 	} ?>
 </body>
 </html>
